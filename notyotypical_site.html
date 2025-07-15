@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NotYoTypical Craft Shop</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: #ffffff;
+      color: #000;
+    }
+    header, footer {
+      background-color: #000;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav a {
+      color: #fff;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      background: url('your-feature-image.jpg') no-repeat center center/cover;
+      height: 70vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #fff;
+      padding: 2rem;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      background-color: rgba(0,0,0,0.5);
+      padding: 1rem;
+    }
+    .hero a {
+      margin: 1rem;
+      padding: 0.75rem 1.5rem;
+      background-color: #ff3c38;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+    .categories {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+    .category {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 1rem;
+    }
+    .category img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+    .category h2 {
+      margin-top: 1rem;
+      font-size: 1.25rem;
+    }
+    .footer-columns {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .footer-columns div {
+      margin: 1rem;
+    }
+    .socials a {
+      margin-right: 1rem;
+      color: #fff;
+    }
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>NYT Craft Shop</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#shop">Shop</a>
+      <a href="#about">About</a>
+      <a href="#blog">Blog</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Beautiful Digital Planners & Stickers</h1>
+    <a href="#shop">Shop Now</a>
+    <a href="#bundles">View Bundles</a>
+  </section>
+
+  <section id="shop" class="categories">
+    <div class="category">
+      <img src="planner-image.jpg" alt="Digital Planners" />
+      <h2>Planners</h2>
+    </div>
+    <div class="category">
+      <img src="stickers-image.jpg" alt="Stickers" />
+      <h2>Stickers</h2>
+    </div>
+    <div class="category">
+      <img src="bundle-image.jpg" alt="Planner Sticker Bundles" />
+      <h2>Planner Sticker Bundles</h2>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-columns">
+      <div>
+        <p>&copy; 2025 NotYoTypical Craft Shop</p>
+        <p>Made with ❤️ for creatives everywhere</p>
+      </div>
+      <div class="socials">
+        <a href="#">Instagram</a>
+        <a href="#">TikTok</a>
+        <a href="#">Facebook</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
